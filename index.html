@@ -558,6 +558,9 @@ window.__ANIMALS__.unshift({
   card: 1,
   ratio: 1.5
 });
+window.__ANIMALS__ = window.__ANIMALS__.filter(function(animal) {
+  return animal.name !== "Дружок";
+});
 </script>
 <script>
 (function(){
